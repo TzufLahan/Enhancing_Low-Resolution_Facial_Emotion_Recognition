@@ -77,7 +77,7 @@ This project builds on:
   M.Sc. student in Information Systems and Software Engineering, specializing in Deep Learning and Medical Imaging
 
 - **Noa Stern** ([noaster@post.bgu.ac.il](mailto\:noaster@post.bgu.ac.il))\
-  M.Sc. student in Information Systems and Software Engineering
+  M.Sc. student in Information Systems and Software Engineering, with a research focus on the relationship between anxiety and temporal patterning.
 
 ---
 
