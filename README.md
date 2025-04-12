@@ -63,10 +63,10 @@ Improving FER for low-resolution images expands its application in:
 
 This project builds on:
 
-- [Akhand et al. 2021](https://arxiv.org/abs/2101.04061) – Transfer learning with VGG models for FER
+- [Akhand et al. 2021](https://www.mdpi.com/2079-9292/10/9/1036)– Transfer learning with VGG models for FER
   [GitHub Repo](https://github.com/ShuvenduRoy/FER_TL_PipelineTraining)
   
-- [Wang et al. 2021](https://www.mdpi.com/2079-9292/10/9/1036) – GFPGAN for real-world blind face restoration
+- [Wang et al. 2021](https://arxiv.org/abs/2101.04061)  – GFPGAN for real-world blind face restoration
   [GFPGAN GitHub Repo](https://github.com/TencentARC/GFPGAN)
 
 ---
