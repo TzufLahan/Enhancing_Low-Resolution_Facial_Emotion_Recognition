@@ -2,7 +2,7 @@
 
 This notebook applies state-of-the-art super-resolution models, such as **GFPGAN** and **CodeFormer**, to restore facial details in low-resolution or degraded images.  
 The pipeline demonstrates how enhanced resolution can improve the visual quality and identity preservation of facial images under various downsampling conditions.
-**All restored outputs are resized to 224×224 pixels**, making them suitable for feeding into deep learning models in subsequent processing stages(e.g VGG-16, ResNet50 etc...).
+**All restored outputs are upsampled to 224×224 pixels**, making them suitable for feeding into deep learning models in subsequent processing stages(e.g VGG-16, ResNet50 etc...).
 
 
 Below is an example of different downsampled resolutions:
