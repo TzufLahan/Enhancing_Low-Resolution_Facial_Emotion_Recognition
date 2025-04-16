@@ -1,14 +1,14 @@
 # 🧠 Enhancing Low-Resolution Facial Emotion Recognition via Super-Resolution
 
 This project investigates the use of **Super-Resolution (SR)** techniques to improve the accuracy of **Facial Emotion Recognition (FER)** systems on low-resolution images.\
-We explore how GAN-based restoration—specifically **GFPGAN**—can enhance degraded facial images before they are passed to deep learning classifiers.
+We explore how GAN-based restoration—specifically **GFPGAN** and **CodeFormer**—can enhance degraded facial images before they are passed to deep learning classifiers.
 
 ---
 
 ## 🌟 Project Objective
 
 While most state-of-the-art FER models are trained on high-resolution datasets, real-world scenarios (e.g. surveillance cameras, video calls) often involve low-resolution images.\
-This project proposes a deep learning pipeline that uses **GFPGAN for facial enhancement**, followed by classification with **pre-trained CNN models (e.g. VGG-16)** fine-tuned for emotion recognition.
+This project proposes a deep learning pipeline that uses **facial enhancement techniques such as GFPGAN and CodeFormer**, followed by classification with **pre-trained CNN models (e.g. VGG-16)** fine-tuned for emotion recognition.
 
 ---
 
@@ -23,28 +23,34 @@ This project proposes a deep learning pipeline that uses **GFPGAN for facial enh
 ## 🔍 Key Components
 
 - 🧬 **GFPGAN** – A GAN-based facial restoration framework using pretrained StyleGAN priors and U-Net architecture with CS-SFT layers.
+- 🧠 **CodeFormer** – A Transformer-guided face restoration model that leverages a discrete codebook prior, enabling a balance between visual quality and identity fidelity.
 - 📆 **KDEF Dataset** – 4,900 high-quality facial images across 7 emotional states, used as the benchmark dataset.
 - 🤠 **Deep CNNs** – Pre-trained models (e.g., VGG-16, VGG-19) used for emotion classification.
-- 📉 **Baseline vs. Enhanced Comparison** – Experiments are conducted in two phases:
-  1. Train/test model directly on low-resolution data
-  2. Train/test model on enhanced low-res data using GFPGAN
+- 📉 **Baseline vs. Enhanced Comparison** – Experiments are conducted in three phases:
+  1. Train/test the model directly on low-resolution data  
+  2. Train/test the model on enhanced low-resolution data using **GFPGAN** and **CodeFormer**  
+  3. Compare classification performance across conditions to evaluate the impact of facial enhancement on emotion recognition accuracy
 
 ---
 
 ## 🏗️ System Architecture
 
 ```
-KDEF High-Res Image
-     │
-[ Downsample to Low-Res ]
-     │
-Low-Res Image
-     │
-[ GFPGAN Enhancement ]
-     │
-[ Pre-Trained CNN Classifier ]
-     │
-Emotion Prediction
+                      KDEF High-Res Image
+                              │
+                   [ Downsample to Low-Res ]
+                              │
+                        Low-Res Image
+              ┌───────────────┴───────────────┐ 
+  [ GFPGAN Enhancement ]              [ CodeFormer Enhancement ]
+            │                                     │
+[ Pre-Trained CNN Classifier ]      [ Pre-Trained CNN Classifier ]
+            │                                     │
+    Emotion Prediction                    Emotion Prediction
+              └───────────────┬───────────────┘
+                    Evaluation & Comparison
+
+
 ```
 
 ---
@@ -68,6 +74,9 @@ This project builds on:
   
 - [Wang et al. 2021](https://arxiv.org/abs/2101.04061)  – GFPGAN for real-world blind face restoration
   [GFPGAN GitHub Repo](https://github.com/TencentARC/GFPGAN)
+
+- [Zhou et al. 2022](https://arxiv.org/abs/2206.11253) – CodeFormer: Robust face restoration with codebook lookup and Transformer architecture  
+  [CodeFormer GitHub Repo](https://github.com/sczhou/CodeFormer)
 
 ---
 
