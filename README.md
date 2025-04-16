@@ -75,8 +75,7 @@ This project builds on:
 - [Wang et al. 2021](https://arxiv.org/abs/2101.04061)  – GFPGAN for real-world blind face restoration
   [GFPGAN GitHub Repo](https://github.com/TencentARC/GFPGAN)
 
-- [Zhou et al. 2022](https://arxiv.org/abs/2206.11253) – CodeFormer: Robust face restoration with codebook lookup and Transformer architecture  
-  [CodeFormer GitHub Repo](https://github.com/sczhou/CodeFormer)
+- [Zhou et al. 2022](https://arxiv.org/abs/2206.11253) – CodeFormer: Robust face restoration with codebook lookup and Transformer architecture  [CodeFormer GitHub Repo](https://github.com/sczhou/CodeFormer)
 
 ---
 
