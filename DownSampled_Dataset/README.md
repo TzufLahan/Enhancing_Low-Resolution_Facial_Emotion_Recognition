@@ -2,9 +2,9 @@
 
 This notebook provides a simple utility for creating **downsampled versions of facial image datasets to KDEF**.  
 It generates multiple folders with the same image names, each resized to a different resolution :
--28x28
--56x56
--112x112
+- 28x28
+- 56x56
+- 112x112
 
 
 ## Features
