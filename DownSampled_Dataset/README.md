@@ -6,6 +6,10 @@ It generates multiple folders with the same image names, each resized to a diffe
 - 56x56
 - 112x112
 
+Below is a sample showing the same face image downsampled at different levels:
+
+![Downsampled Faces](https://github.com/user-attachments/assets/d818778d-abeb-4d6b-a724-84747d5d25aa)
+
 
 ## Features
 
@@ -22,8 +26,4 @@ It generates multiple folders with the same image names, each resized to a diffe
 
 Each resolution will be saved in a separate output folder
 
-## Sample Output
 
-Below is a sample showing the same face image downsampled at different levels:
-
-![Downsampled Faces](https://github.com/user-attachments/assets/d818778d-abeb-4d6b-a724-84747d5d25aa)
