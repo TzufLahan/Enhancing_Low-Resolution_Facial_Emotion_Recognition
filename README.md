@@ -8,7 +8,7 @@ We explore how GAN-based restoration, **GFPGAN** and **CodeFormer**, can enhance
 ## 🌟 Project Objective
 
 While most state-of-the-art FER models are trained on high-resolution datasets, real-world scenarios (e.g. surveillance cameras, video calls) often involve low-resolution images.\
-This project proposes a deep learning pipeline that uses **facial enhancement techniques such as GFPGAN and CodeFormer**, followed by classification with **pre-trained CNN models (e.g. VGG-16)** fine-tuned for emotion recognition.
+This project proposes a deep learning pipeline that uses **facial enhancement techniques such as GFPGAN and CodeFormer**, followed by classification with **pre-trained CNN models (Resnet-18, Resnet-50, VGG-16 and VGG-19)** fine-tuned for emotion recognition.
 
 ---
 
