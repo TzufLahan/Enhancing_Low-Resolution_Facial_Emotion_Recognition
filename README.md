@@ -1,18 +1,18 @@
-# 🧠 Enhancing Low-Resolution Facial Emotion Recognition via Super-Resolution
+<h1 align="center">Enhancing Low-Resolution Facial Emotion Recognition via Super-Resolution</h1>
 
 This project investigates the use of **Super-Resolution (SR)** techniques to improve the accuracy of **Facial Emotion Recognition (FER)** systems on low-resolution images.\
 We explore how GAN-based restoration, **GFPGAN** and **CodeFormer**, can enhance degraded facial images before they are passed to deep learning classifiers.
 
 ---
 
-## 🌟 Project Objective
+## Project Objective
 
 While most state-of-the-art FER models are trained on high-resolution datasets, real-world scenarios (e.g. surveillance cameras, video calls) often involve low-resolution images.\
 This project proposes a deep learning pipeline that uses **facial enhancement techniques such as GFPGAN and CodeFormer**, followed by classification with **pre-trained CNN models (Resnet-18, Resnet-50, VGG-16 and VGG-19)** fine-tuned for emotion recognition.
 
 ---
 
-## 🧪 Research Question & Hypothesis
+## Research Question & Hypothesis
 
 > **Question**: Can Super-Resolution techniques improve the accuracy of emotion recognition from low-resolution images?
 
@@ -20,20 +20,20 @@ This project proposes a deep learning pipeline that uses **facial enhancement te
 
 ---
 
-## 🔍 Key Components
+## Key Components
 
-- 🧬 **GFPGAN** – A GAN-based facial restoration framework using pretrained StyleGAN priors and U-Net architecture with CS-SFT layers.
-- 🧠 **CodeFormer** – A Transformer-guided face restoration model that leverages a discrete codebook prior, enabling a balance between visual quality and identity fidelity.
-- 📆 **KDEF Dataset** – 4,900 high-quality facial images across 7 emotional states, used as the benchmark dataset.
-- 🤠 **Deep CNNs** – Pre-trained models (e.g., VGG-16, VGG-19) used for emotion classification.
-- 📉 **Baseline vs. Enhanced Comparison** – Experiments are conducted in three phases:
+-  **GFPGAN** – A GAN-based facial restoration framework using pretrained StyleGAN priors and U-Net architecture with CS-SFT layers.
+-  **CodeFormer** – A Transformer-guided face restoration model that leverages a discrete codebook prior, enabling a balance between visual quality and identity fidelity.
+-  **KDEF Dataset** – 4,900 high-quality facial images across 7 emotional states, used as the benchmark dataset.
+-  **Deep CNNs** – Pre-trained models (e.g., VGG-16, VGG-19) used for emotion classification.
+-  **Baseline vs. Enhanced Comparison** – Experiments are conducted in three phases:
   1. Train/test the model directly on low-resolution data  
   2. Train/test the model on enhanced low-resolution data using **GFPGAN** and **CodeFormer**  
   3. Compare classification performance across conditions to evaluate the impact of facial enhancement on emotion recognition accuracy
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
                         KDEF High-Res Image
@@ -55,17 +55,17 @@ This project proposes a deep learning pipeline that uses **facial enhancement te
 
 ---
 
-## 📊 Expected Impact
+## Expected Impact
 
 Improving FER for low-resolution images expands its application in:
 
-- 👮 Security & surveillance systems
-- 💬 Human-computer interaction (HCI)
-- 🧑‍⚕️ Remote patient monitoring and mental health analysis
+-  Security & surveillance systems
+-  Human-computer interaction (HCI)
+-  Remote patient monitoring and mental health analysis
 
 ---
 
-## 📚 Related Work
+## Related Work
 
 This project builds on:
 
@@ -89,7 +89,7 @@ This project builds on:
 
 ---
 
-## 📌 License
+##  License
 
 This project is for academic research purposes only.
 
