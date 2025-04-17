@@ -1,7 +1,7 @@
 # 🧠 Enhancing Low-Resolution Facial Emotion Recognition via Super-Resolution
 
 This project investigates the use of **Super-Resolution (SR)** techniques to improve the accuracy of **Facial Emotion Recognition (FER)** systems on low-resolution images.\
-We explore how GAN-based restoration—specifically **GFPGAN** and **CodeFormer**—can enhance degraded facial images before they are passed to deep learning classifiers.
+We explore how GAN-based restoration, **GFPGAN** and **CodeFormer**, can enhance degraded facial images before they are passed to deep learning classifiers.
 
 ---
 
