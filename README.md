@@ -36,19 +36,19 @@ This project proposes a deep learning pipeline that uses **facial enhancement te
 ## 🏗️ System Architecture
 
 ```
-                      KDEF High-Res Image
-                              │
-                   [ Downsample to Low-Res ]
-                              │
-                        Low-Res Image
-              ┌───────────────┴───────────────┐ 
-  [ GFPGAN Enhancement ]              [ CodeFormer Enhancement ]
-            │                                     │
-[ Pre-Trained CNN Classifier ]      [ Pre-Trained CNN Classifier ]
-            │                                     │
-    Emotion Prediction                    Emotion Prediction
-              └───────────────┬───────────────┘
-                    Evaluation & Comparison
+                        KDEF High-Res Image
+                                 │
+                     [ Downsample to Low-Res ]
+                                 │
+                           Low-Res Image
+              ┌──────────────────┴───────────────────┐ 
+  [ GFPGAN Enhancement ]                  [ CodeFormer Enhancement ]
+              │                                      │
+[ Pre-Trained CNN Classifier ]          [ Pre-Trained CNN Classifier ]
+              │                                      │
+    Emotion Prediction                       Emotion Prediction
+              └──────────────────┬───────────────────┘
+                      Evaluation & Comparison
 
 
 ```
