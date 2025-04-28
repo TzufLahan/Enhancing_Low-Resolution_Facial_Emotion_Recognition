@@ -27,9 +27,9 @@ This project proposes a deep learning pipeline that uses **facial enhancement te
 -  **KDEF Dataset** – 4,900 high-quality facial images across 7 emotional states, used as the benchmark dataset.
 -  **Deep CNNs** – Pre-trained models (e.g., VGG-16, VGG-19) used for emotion classification.
 -  **Baseline vs. Enhanced Comparison** – Experiments are conducted in three phases:
-  1. Train/test the model directly on low-resolution data  
-  2. Train/test the model on enhanced low-resolution data using **GFPGAN** and **CodeFormer**  
-  3. Compare classification performance across conditions to evaluate the impact of facial enhancement on emotion recognition accuracy
+  1. Train the model directly on the original high-resolution data  
+  2. Evaluate the model's robustness on low-resolution images 
+  3. Apply facial enhancement (using GFPGAN and CodeFormer) on the low-resolution images and assess improvement in classification accuracy
 
 ---
 
@@ -40,8 +40,8 @@ This project proposes a deep learning pipeline that uses **facial enhancement te
                                  │
                      [ Downsample to Low-Res ]
                                  │
-                           Low-Res Image
-              ┌──────────────────┴───────────────────┐ 
+                           Low-Res Image ─────────────────────────────────────────┐
+              ┌──────────────────┴───────────────────┐            [ Evaluate Robustness on Low-Res Images ]
   [ GFPGAN Enhancement ]                  [ CodeFormer Enhancement ]
               │                                      │
 [ Pre-Trained CNN Classifier ]          [ Pre-Trained CNN Classifier ]
