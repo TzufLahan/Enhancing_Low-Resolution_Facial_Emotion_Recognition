@@ -13,6 +13,8 @@ Here is an example of the same face restored from different downsampled resoluti
 
 ### GFPGAN 
 ![Enhanced GFPGAN Example](https://github.com/user-attachments/assets/e2aa10b0-4fbd-4438-8ad6-649c40b9c5a7)
+### Progressive GFPGAN (Enhanced in Steps) 
+![Enhanced GFPGAN Example](https://github.com/user-attachments/assets/02314a9c-e699-4202-8a35-1ed50a53247d)
 ### CodeFormer
 ![Enhanced CodeFormer Example](https://github.com/user-attachments/assets/8e4168f1-5cd3-4ad0-9918-54f29d74bb09)
 
